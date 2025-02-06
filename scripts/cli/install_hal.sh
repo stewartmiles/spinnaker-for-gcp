@@ -23,7 +23,7 @@ fi
 pkill -f '/opt/halyard/lib/halyard-web' || true
 pkill -f "$HOME/hal/halyard/lib/halyard-web" || true
 
-curl -O https://raw.githubusercontent.com/spinnaker/halyard/master/install/debian/InstallHalyard.sh
+curl -O https://raw.githubusercontent.com/spinnaker/halyard/v1.49.0/install/debian/InstallHalyard.sh
 sudo bash InstallHalyard.sh --user $USER -y $@
 
 retVal=$?
